@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-<div class ="weather-app">
-    <div class="container">
-        <h3 class="brand">the weather</h3> 
-        <div>
-            <h1 class="temp" >16&#176;</h1>
-            <div class="city-time">
-                <h1 class="name">Nairobi</h1>
-                <small>
-                    <span class="time">16.30</span>
-                    -
-                    <span class="date">
-                    Monday June 19
-                </span>
-                </small>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">the weather</h3>
+            <div>
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">Nairobi</h1>
+                    <small>
+                        <span class="time">16.30</span>
+                        -
+                        <span class="date">
+                            Monday June 19
+                        </span>
+                    </small>
+                </div>
+                <img src="./assets/images/sun.png" class="icon" alt="icon" width="50" height="50" />
+                <span class="condition">Cloudy</span>
             </div>
-            <img src="./assets/images/sun.png" class="icon" alt="icon" width="50" height="50" />
-<span class="condition">Cloudy</span>
         </div>
     </div>
-</div>
-<div class="panel">
-    <form id="location">
-        <input type="text" class="search" placeholder="search Location..." />
-        <button type="submit" class="submit">
-            <i class="fas fa-search"></i>
+    <div class="panel">
+        <form id="location">
+            <input type="text" class="search" placeholder="search Location..." />
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
             </button>
-            </form>
+        </form>
 
-            <ul class="cities">
-                <li class="city">Kisumu</li>
-                <li class="city">Naivasha</li>
-                <li class="city">Mombasa</li>
-                <li class="city">Machakos</li>
-                </ul>
-
-
-                <ul class="details">
-                    
+        <ul class="cities">
+            <li class="city">Kisumu</li>
+            <li class="city">Naivasha</li>
+            <li class="city">Mombasa</li>
+            <li class="city">Machakos</li>
+        </ul>
 
 
+        <ul class="details">
+            <h4>Weather Details</h4>
+            <li>
+                <span>Cloudy</span>
+                <span class="cloud">89%</span>
+            </li>
+
+            <li>
+                <span>Humidity</span>
+
+                <span class="humidity">64%</span>
+
+            </li>
+
+            <li>
+                <span>Wind</span>
+                <span class="wind">8km/h</span>
+
+            </li>
+
+        </ul>
+    </div>
+    
 
 
 
 
 
-        
-        <script src="" async defer></script>
-    </body>
+
+
+    <script src="" async defer></script>
+</body>
+
 </html>

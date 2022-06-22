@@ -26,3 +26,26 @@ cities.forEach((city) => {
 });
     
 })
+form.addEventListener('submit', (e) => {
+    
+    if (search.ariaValueMax.length == 0) {
+    
+        alert(' Please type your favourite city name');
+    } else {
+        
+
+
+
+        
+}
+
+
+
+
+}
+
+
+
+
+
+)

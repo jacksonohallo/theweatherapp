@@ -38,7 +38,7 @@ form.addEventListener('submit', (e) => {
         search.value = "";
         app.style.opacity = "0";
 
-
+        e.preventDefault();
 
 }
 

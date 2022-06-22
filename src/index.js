@@ -71,6 +71,26 @@ function fetchWeather() {
             const m = parseInt(date, substr(5, 2));
             const d = parseInt(date, substr(8, 2));
             const time = date.substr(11);
+            dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}, ${m} ${y} `
+            timeOutput.innerHTML = time;
+
+            nameOutput.innerHTML = data.location.name;
+
+            const iconId = data.current.current.icon.substr(
+                "//cdn.weatherapi.com/waether/64x64/".length
+            )
+            icon.src = "./" + iconId;
+
+            cloudOutput.innerHTML = data.current.cloud + "%";
+            humidityOutput.innerHTML = data.current.humidity + "%";
+            windOutput.innerHTML = data.current.wind_kph + "km/h"
+            let timeOfDay = "day";
+            const code = data.current.condition.code;
+
+            
+
+
+
 
         }
 

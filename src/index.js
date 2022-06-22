@@ -33,10 +33,13 @@ form.addEventListener('submit', (e) => {
         alert(' Please type your favourite city name');
     } else {
         
+        cityInput = search.value;
+        fetchweatherData();
+        search.value = "";
+        app.style.opacity = "0";
 
 
 
-        
 }
 
 

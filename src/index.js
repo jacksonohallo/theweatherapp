@@ -40,15 +40,48 @@ form.addEventListener('submit', (e) => {
 
         e.preventDefault();
 
+    }
+
+});
+
+function dayOfTheWeek(day, month, year) {
+    const weekday = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+
+    ];
+    return weekday[new Date(`${day}/${month} ${year}`).getDay()];
+};
+
+function fetchWeather() {
+    fetch(`                         `)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            temp.innerHTML = data.current.temp_c + "&#176;"
+            conditionOutput.innerHTML = data.current.condition.text;
+            const date = data.location.localtime;
+            const y = parseInt(date.substr(0, 4));
+            const m = parseInt(date, substr(5, 2));
+            const d = parseInt(date, substr(8, 2));
+            const time = date.substr(11);
+
+        }
+
+
+
+
+
+
+
+        )
+
+
+
 }
-
-
-
-
-}
-
-
-
-
-
-)
